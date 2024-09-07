@@ -4,13 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/styles.css">
-    <title>Document</title>
+    <title>Meu gerenciador de tarefas</title>
 </head>
 
 <body>
+    <main></main>
+    <div class="card">
+        <h1>Minhas tarefas</h1>
 
+        <div class="new-task">
+            <input type="text" id="new-task" class="input-new-task" placeholder="Adicionar nova tarefa">
+            <button id="add-task" class="btn-add-task">Adicionar tarefa</button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    </main>
+
+    <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
